@@ -1,0 +1,6919 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ZynGen Enterprises – Agri, Food and Natural Products." name="description"/>
+<title>ZynGen Enterprises | Agri &amp; Natural Products</title>
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fcfaf6;
+    color:#30251f;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 5.5%;
+
+    background:rgba(255,252,247,.96);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid #eadfd4;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:52px;
+
+    height:52px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1;
+
+}
+
+.logo-company{
+
+    color:#2c211c;
+
+    font-size:22px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+}
+
+.logo-company span{
+
+    color:#a85c3b;
+
+}
+
+.logo-sub{
+
+    color:#a8755e;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-top:5px;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.nav a{
+
+    color:#665951;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.nav a:hover{
+
+    color:#a85c3b;
+
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+.cart-button{
+
+    position:relative;
+
+    border:0;
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.cart-button:hover{
+
+    background:#713c29;
+
+    transform:translateY(-2px);
+
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:-6px;
+
+    right:-6px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#d49a55;
+
+    color:#fff;
+
+    font-size:10px;
+
+    font-weight:bold;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    min-height:550px;
+
+    padding:70px 6%;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(193,126,82,.18),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 92% 75%,
+            rgba(213,174,101,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f7eee4,
+            #fffaf3
+        );
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+/* HERO ANIMATION */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(168,92,59,.08);
+
+    left:-180px;
+
+    top:-160px;
+
+    animation:
+        heroOrb 12s ease-in-out infinite;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(197,157,86,.12);
+
+    right:-130px;
+
+    bottom:-150px;
+
+    animation:
+        heroOrb2 10s ease-in-out infinite;
+
+}
+
+@keyframes heroOrb{
+
+    0%,100%{
+        transform:
+            translate(0,0)
+            rotate(0deg);
+    }
+
+    50%{
+        transform:
+            translate(35px,25px)
+            rotate(25deg);
+    }
+
+}
+
+@keyframes heroOrb2{
+
+    0%,100%{
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50%{
+        transform:
+            translate(-25px,-25px)
+            scale(1.1);
+    }
+
+}
+
+
+/* =========================================================
+   HERO INNER
+========================================================= */
+
+.hero-inner{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* HERO LABEL */
+
+.hero-label{
+
+    display:inline-flex;
+
+    padding:9px 16px;
+
+    border-radius:30px;
+
+    background:#f0dfd0;
+
+    color:#8f4f35;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:22px;
+
+    animation:
+        fadeDown .8s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* HERO TITLE */
+
+.hero h1{
+
+    max-width:720px;
+
+    font-size:clamp(48px,6vw,75px);
+
+    line-height:.98;
+
+    letter-spacing:-4px;
+
+    margin-bottom:25px;
+
+    color:#30251f;
+
+    animation:
+        heroTitle .9s ease forwards;
+
+}
+
+.hero h1 span{
+
+    color:#a85c3b;
+
+}
+
+@keyframes heroTitle{
+
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* HERO TEXT */
+
+.hero p{
+
+    max-width:650px;
+
+    color:#75675f;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    animation:
+        fadeText 1.1s ease forwards;
+
+}
+
+@keyframes fadeText{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    border:0;
+
+    padding:15px 23px;
+
+    border-radius:30px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.primary-btn:hover{
+
+    background:#713c29;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(143,79,53,.25);
+
+}
+
+.secondary-btn{
+
+    padding:14px 22px;
+
+    border-radius:30px;
+
+    border:1px solid #dfcfc1;
+
+    background:#fff;
+
+    color:#805039;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#f7eee5;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual{
+
+    min-height:400px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.hero-circle{
+
+    width:330px;
+
+    height:330px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #fff 0%,
+            #fffaf4 65%,
+            #f3e7dc 100%
+        );
+
+    border:1px solid #e5d7cb;
+
+    box-shadow:
+        0 35px 80px
+        rgba(107,70,48,.15);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    animation:
+        heroFloat 5s ease-in-out infinite,
+        heroShadow 4s ease-in-out infinite;
+
+}
+
+.hero-circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-15px;
+
+    border-radius:50%;
+
+    border:1px dashed
+        rgba(168,92,59,.35);
+
+    animation:
+        rotateRing 18s linear infinite;
+
+}
+
+.hero-circle::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border-radius:50%;
+
+    border:1px solid
+        rgba(210,170,95,.25);
+
+    animation:
+        reverseRing 12s linear infinite;
+
+}
+
+@keyframes heroFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-14px);
+    }
+
+}
+
+@keyframes heroShadow{
+
+    0%,100%{
+
+        box-shadow:
+            0 35px 80px
+            rgba(107,70,48,.15);
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 45px 95px
+            rgba(107,70,48,.23);
+
+    }
+
+}
+
+@keyframes rotateRing{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes reverseRing{
+
+    from{
+        transform:rotate(360deg);
+    }
+
+    to{
+        transform:rotate(0deg);
+    }
+
+}
+
+
+/* HERO INNER CIRCLE */
+
+.hero-circle-inner{
+
+    width:240px;
+
+    height:240px;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #b86d49,
+            #793e2b
+        );
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+    z-index:2;
+
+    box-shadow:
+        inset 0 0 35px
+        rgba(255,255,255,.08);
+
+}
+
+.hero-circle-inner .leaf{
+
+    width:82px;
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:14px;
+
+    flex-shrink:0;
+
+    animation:
+        productFloat 3.5s ease-in-out infinite;
+
+}
+
+.hero-circle-inner .leaf img{
+
+    width:78px;
+
+    height:78px;
+
+    object-fit:contain;
+
+    display:block;
+
+    border-radius:12px;
+
+    filter:
+        drop-shadow(
+            0 8px 12px
+            rgba(0,0,0,.22)
+        );
+
+    animation:
+        productGlow 3s ease-in-out infinite;
+
+}
+
+@keyframes productFloat{
+
+    0%,100%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50%{
+        transform:
+            translateY(-9px)
+            rotate(2deg);
+    }
+
+}
+
+@keyframes productGlow{
+
+    0%,100%{
+
+        filter:
+            drop-shadow(
+                0 8px 12px
+                rgba(0,0,0,.22)
+            );
+
+    }
+
+    50%{
+
+        filter:
+            drop-shadow(
+                0 12px 22px
+                rgba(255,220,160,.35)
+            );
+
+    }
+
+}
+
+.hero-circle-inner strong{
+
+    display:block;
+
+    font-size:25px;
+
+    line-height:1.1;
+
+    color:#fff;
+
+}
+
+.hero-circle-inner span{
+
+    display:block;
+
+    font-size:11px;
+
+    line-height:1.3;
+
+    opacity:.85;
+
+    margin-top:7px;
+
+    color:#f8e9dc;
+
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.floating{
+
+    position:absolute;
+
+    padding:15px 18px;
+
+    background:
+        rgba(255,253,249,.96);
+
+    border:1px solid #e8d9cd;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 18px 40px
+        rgba(92,59,43,.12);
+
+    backdrop-filter:blur(10px);
+
+    z-index:5;
+
+    animation:
+        cardFloat 4s ease-in-out infinite;
+
+}
+
+.floating strong{
+
+    display:block;
+
+    color:#392a23;
+
+    font-size:14px;
+
+    margin-bottom:4px;
+
+}
+
+.floating span{
+
+    color:#82736b;
+
+    font-size:10px;
+
+}
+
+.float-one{
+
+    top:30px;
+
+    right:5px;
+
+}
+
+.float-two{
+
+    bottom:30px;
+
+    left:0;
+
+    animation-delay:1s;
+
+}
+
+.float-three{
+
+    bottom:0;
+
+    right:25px;
+
+    animation-delay:2s;
+
+}
+
+@keyframes cardFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+/* =========================================================
+   CATEGORY BAR
+========================================================= */
+
+.category-bar{
+
+    background:#fffdf9;
+
+    border-top:1px solid #eadfd5;
+
+    border-bottom:1px solid #eadfd5;
+
+    padding:22px 6%;
+
+}
+
+.category-inner{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.category-btn{
+
+    border:1px solid #e5d8ce;
+
+    background:#faf6f1;
+
+    color:#765f53;
+
+    padding:10px 17px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.category-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.category-btn:hover,
+.category-btn.active{
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    border-color:#8f4f35;
+
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.products{
+
+    padding:90px 6%;
+
+    background:#fcfaf6;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:48px;
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:
+        sectionReveal .8s ease forwards;
+
+}
+
+@keyframes sectionReveal{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.eyebrow{
+
+    color:#a46345;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+    color:#332720;
+
+    font-size:45px;
+
+    letter-spacing:-2.5px;
+
+    margin-bottom:14px;
+
+}
+
+.section-heading p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#786d66;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* PRODUCT GRID */
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+
+/* PRODUCT CARD */
+
+.product-card{
+
+    background:#fff;
+
+    border:1px solid #e8ddd4;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    animation:
+        productReveal .7s ease forwards;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.product-card:nth-child(1){animation-delay:.10s;}
+.product-card:nth-child(2){animation-delay:.20s;}
+.product-card:nth-child(3){animation-delay:.30s;}
+.product-card:nth-child(4){animation-delay:.40s;}
+.product-card:nth-child(5){animation-delay:.50s;}
+.product-card:nth-child(6){animation-delay:.60s;}
+.product-card:nth-child(7){animation-delay:.70s;}
+.product-card:nth-child(8){animation-delay:.80s;}
+.product-card:nth-child(9){animation-delay:.90s;}
+
+@keyframes productReveal{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-9px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(88,58,43,.13);
+
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image{
+
+    height:250px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f8eee5,
+            #fffaf4
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    padding:15px;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+    transition:
+        transform .5s
+        cubic-bezier(.2,.8,.2,1),
+        filter .5s;
+
+}
+
+.product-card:hover
+.product-image img{
+
+    transform:
+        scale(1.08)
+        translateY(-3px);
+
+    filter:
+        drop-shadow(
+            0 12px 15px
+            rgba(90,55,40,.15)
+        );
+
+}
+
+.product-badge{
+
+    position:absolute;
+
+    top:13px;
+
+    left:13px;
+
+    padding:7px 11px;
+
+    border-radius:20px;
+
+    background:#fffaf5;
+
+    color:#8c543c;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 6px 15px
+        rgba(0,0,0,.06);
+
+}
+
+
+/* PRODUCT INFO */
+
+.product-info{
+
+    padding:20px;
+
+}
+
+.product-category{
+
+    color:#a27764;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+
+}
+
+.product-info h3{
+
+    color:#332720;
+
+    font-size:19px;
+
+    margin-bottom:8px;
+
+}
+
+.product-info p{
+
+    color:#786f69;
+
+    font-size:11px;
+
+    line-height:1.7;
+
+    min-height:40px;
+
+    margin-bottom:17px;
+
+}
+
+
+/* PRODUCT ACTIONS */
+
+.product-actions{
+
+    display:flex;
+
+    gap:9px;
+
+}
+
+.view-btn{
+
+    flex:1;
+
+    padding:11px;
+
+    border-radius:11px;
+
+    border:1px solid #e3d7ce;
+
+    background:#fff;
+
+    color:#85513a;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.view-btn:hover{
+
+    background:#faf1e9;
+
+    transform:translateY(-2px);
+
+}
+
+.add-btn{
+
+    flex:1;
+
+    padding:11px;
+
+    border:0;
+
+    border-radius:11px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.add-btn:hover{
+
+    background:#713c29;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/* =========================================================
+   FRONT CARD PACK SIZE + QUANTITY SELECTOR
+========================================================= */
+.card-selection{
+    display:grid;
+    grid-template-columns:1fr 92px;
+    gap:10px;
+    margin:0 0 14px;
+}
+.card-select-box{
+    min-width:0;
+}
+.card-select-box label{
+    display:block;
+    margin-bottom:6px;
+    color:#7d6b61;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.8px;
+    text-transform:uppercase;
+}
+.card-package-select,
+.card-qty-input{
+    width:100%;
+    height:40px;
+    padding:0 11px;
+    border:1px solid #dfd1c7;
+    border-radius:10px;
+    background:#fffaf6;
+    color:#3a2b24;
+    font-size:12px;
+    font-weight:700;
+    outline:none;
+    transition:.25s;
+}
+.card-package-select:focus,
+.card-qty-input:focus{
+    border-color:#9a593d;
+    box-shadow:0 0 0 3px rgba(154,89,61,.10);
+}
+.card-qty-input{
+    text-align:center;
+}
+@media(max-width:560px){
+    .card-selection{
+        grid-template-columns:1fr 82px;
+    }
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.natural-section{
+
+    padding:100px 6%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f3e5d9,
+            #faf2e9
+        );
+
+}
+
+.natural-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.natural-title{
+
+    font-size:48px;
+
+    line-height:1.04;
+
+    letter-spacing:-2.5px;
+
+    color:#382920;
+
+}
+
+.natural-title span{
+
+    color:#a85c3b;
+
+}
+
+.natural-text{
+
+    color:#756960;
+
+    font-size:15px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.natural-points{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:13px;
+
+}
+
+.natural-point{
+
+    padding:17px;
+
+    background:#fffdf9;
+
+    border:1px solid #e7d9ce;
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+.natural-point:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(88,58,43,.08);
+
+}
+
+.natural-point strong{
+
+    display:block;
+
+    color:#3b2b23;
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+.natural-point span{
+
+    color:#7e7169;
+
+    font-size:11px;
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process{
+
+    padding:100px 6%;
+
+    background:#fffdf9;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.process-card{
+
+    padding:27px;
+
+    border:1px solid #e8ddd4;
+
+    border-radius:21px;
+
+    background:#fcf8f3;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(88,57,42,.10);
+
+}
+
+.process-number{
+
+    color:#b36b4a;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+}
+
+.process-card h3{
+
+    margin:18px 0 10px;
+
+    color:#3b2b23;
+
+    font-size:17px;
+
+}
+
+.process-card p{
+
+    color:#786f69;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+
+    padding:90px 6%;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(214,161,105,.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #7d422e,
+            #4d2920
+        );
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.cta-inner{
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+.cta h2{
+
+    font-size:45px;
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+    margin-bottom:16px;
+
+}
+
+.cta p{
+
+    color:#eadbd0;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+.cta-btn{
+
+    display:inline-block;
+
+    padding:15px 24px;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    color:#7d422e;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    border:0;
+
+    transition:.25s;
+
+}
+
+.cta-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0,0,0,.15);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    padding:50px 6% 35px;
+
+    background:#251915;
+
+    color:#c7b7ae;
+
+    text-align:center;
+
+}
+
+.footer-brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.footer-brand img{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+    margin-bottom:12px;
+
+}
+
+.footer-logo{
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+}
+
+.footer-logo span{
+
+    color:#d29a72;
+
+}
+
+.footer-sub{
+
+    color:#b77a5c;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-top:5px;
+
+}
+
+.footer-business{
+
+    color:#d2c3ba;
+
+    font-size:12px;
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    margin-top:8px;
+
+    color:#9d8c83;
+
+    font-size:11px;
+
+}
+
+.footer-copy{
+
+    margin-top:20px;
+
+    padding-top:18px;
+
+    border-top:1px solid
+        rgba(255,255,255,.08);
+
+    color:#76665f;
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   CART OVERLAY
+========================================================= */
+
+.cart-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(45,29,23,.48);
+
+    z-index:3000;
+
+    display:none;
+
+}
+
+.cart-overlay.show{
+
+    display:block;
+
+}
+
+
+/* CART DRAWER */
+
+.cart-drawer{
+
+    position:fixed;
+
+    top:0;
+
+    right:-470px;
+
+    width:430px;
+
+    max-width:94vw;
+
+    height:100vh;
+
+    background:#fffdf9;
+
+    z-index:4000;
+
+    box-shadow:
+        -20px 0 60px
+        rgba(0,0,0,.15);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.cart-drawer.show{
+
+    right:0;
+
+}
+
+.cart-header{
+
+    padding:23px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #eee2d9;
+
+}
+
+.cart-header h3{
+
+    font-size:20px;
+
+}
+
+.close-cart{
+
+    border:0;
+
+    background:#f5ece6;
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    font-size:18px;
+
+}
+
+.cart-items{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+}
+
+.empty-cart{
+
+    text-align:center;
+
+    color:#7b706a;
+
+    font-size:13px;
+
+    padding:70px 20px;
+
+}
+
+.cart-item{
+
+    display:grid;
+
+    grid-template-columns:
+        65px 1fr auto;
+
+    gap:13px;
+
+    align-items:center;
+
+    padding:13px 0;
+
+    border-bottom:1px solid #f0e8e2;
+
+}
+
+.cart-item-image{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:14px;
+
+    background:#f4e8df;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.cart-item-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+.cart-item h4{
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+.cart-item small{
+
+    color:#8b7d74;
+
+    font-size:10px;
+
+}
+
+.remove-item{
+
+    border:0;
+
+    background:none;
+
+    color:#a85c3b;
+
+    font-size:11px;
+
+}
+
+.cart-footer{
+
+    padding:20px;
+
+    border-top:1px solid #eee2d9;
+
+}
+
+.cart-footer p{
+
+    color:#756b64;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    margin-bottom:14px;
+
+}
+
+.checkout-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:0;
+
+    border-radius:13px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+/* =========================================================
+   PRODUCT MODAL
+========================================================= */
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:5000;
+
+    background:rgba(47,29,22,.60);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+.modal-overlay.show{
+
+    display:flex;
+
+}
+
+.product-modal{
+
+    width:850px;
+
+    max-width:100%;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:#fffdf9;
+
+    border-radius:25px;
+
+    position:relative;
+
+}
+
+.modal-close{
+
+    position:absolute;
+
+    top:16px;
+
+    right:16px;
+
+    width:35px;
+
+    height:35px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:#f5ece6;
+
+    font-size:18px;
+
+    z-index:5;
+
+}
+
+.modal-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.modal-image{
+
+    min-height:450px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f3e4d8,
+            #fff8ef
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+}
+
+.modal-image img{
+
+    width:100%;
+
+    height:100%;
+
+    max-height:420px;
+
+    object-fit:contain;
+
+}
+
+.modal-info{
+
+    padding:55px 40px;
+
+}
+
+.modal-info small{
+
+    color:#a2664b;
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+.modal-info h2{
+
+    color:#35261f;
+
+    font-size:34px;
+
+    letter-spacing:-1px;
+
+    margin:13px 0;
+
+}
+
+.modal-info p{
+
+    color:#776c65;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.modal-list{
+
+    list-style:none;
+
+    margin-bottom:25px;
+
+}
+
+.modal-list li{
+
+    padding:8px 0;
+
+    border-bottom:1px solid #eee5de;
+
+    color:#62554e;
+
+    font-size:12px;
+
+}
+
+.modal-add{
+
+    width:100%;
+
+    padding:14px;
+
+    border:0;
+
+    border-radius:13px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+/* =========================================================
+   ENQUIRY MODAL
+========================================================= */
+
+.enquiry-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:6000;
+
+    background:rgba(47,29,22,.60);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+.enquiry-overlay.show{
+
+    display:flex;
+
+}
+
+.enquiry-box{
+
+    width:650px;
+
+    max-width:100%;
+
+    background:#fffdf9;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    position:relative;
+
+}
+
+.enquiry-box h2{
+
+    font-size:27px;
+
+    margin-bottom:7px;
+
+}
+
+.enquiry-box>p{
+
+    color:#786e67;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+}
+
+.enquiry-close{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:34px;
+
+    height:34px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:#f5ece6;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:13px;
+
+}
+
+.form-group{
+
+    margin-bottom:14px;
+
+}
+
+.form-group.full{
+
+    grid-column:1 / -1;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    color:#63564e;
+
+    margin-bottom:6px;
+
+}
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:12px 13px;
+
+    border:1px solid #e4d9d1;
+
+    border-radius:11px;
+
+    outline:none;
+
+    font-size:12px;
+
+    color:#392b24;
+
+    background:#fdfaf7;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#b97857;
+
+    background:#fff;
+
+}
+
+.form-group textarea{
+
+    min-height:90px;
+
+    resize:vertical;
+
+}
+
+.submit-enquiry{
+
+    width:100%;
+
+    border:0;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+    transition:.25s;
+
+}
+
+.submit-enquiry:hover{
+
+    background:#713c29;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* =========================================================
+   CHATBOT
+========================================================= */
+
+.zyngen-chat-button{
+
+    position:fixed;
+
+    right:24px;
+
+    bottom:24px;
+
+    width:62px;
+
+    height:62px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #a85c3b,
+            #713c29
+        );
+
+    color:#fff;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    z-index:9998;
+
+    box-shadow:
+        0 10px 30px
+        rgba(143,79,53,.35);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+
+    animation:
+        chatPulse 2.5s ease-in-out infinite;
+
+}
+
+.zyngen-chat-button:hover{
+
+    transform:scale(1.1);
+
+}
+
+@keyframes chatPulse{
+
+    0%,100%{
+
+        box-shadow:
+            0 10px 30px
+            rgba(143,79,53,.30);
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 10px 40px
+            rgba(143,79,53,.55);
+
+    }
+
+}
+
+.zyngen-chat-button .chat-close{
+
+    display:none;
+
+}
+
+.zyngen-chat-button.active .chat-icon{
+
+    display:none;
+
+}
+
+.zyngen-chat-button.active .chat-close{
+
+    display:block;
+
+}
+
+
+/* CHATBOX */
+
+.zyngen-chatbox{
+
+    position:fixed;
+
+    right:24px;
+
+    bottom:98px;
+
+    width:370px;
+
+    max-width:
+        calc(100vw - 30px);
+
+    height:560px;
+
+    background:#fffdf9;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    z-index:9999;
+
+    box-shadow:
+        0 20px 60px
+        rgba(58,38,28,.18);
+
+    display:flex;
+
+    flex-direction:column;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+        translateY(20px)
+        scale(.96);
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease;
+
+}
+
+.zyngen-chatbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* CHAT HEADER */
+
+.zyngen-chat-header{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #8f4f35,
+            #623326
+        );
+
+    color:#fff;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.chatbot-logo{
+
+    width:43px;
+
+    height:43px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    padding:5px;
+
+    object-fit:contain;
+
+}
+
+.chatbot-header-content{
+
+    flex:1;
+
+}
+
+.chatbot-header-content strong{
+
+    display:block;
+
+    font-size:16px;
+
+}
+
+.chatbot-header-content span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:12px;
+
+    opacity:.9;
+
+    margin-top:3px;
+
+}
+
+.chatbot-online-dot{
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:#f6c995;
+
+    display:inline-block;
+
+}
+
+
+/* CHAT MESSAGES */
+
+.zyngen-chat-messages{
+
+    flex:1;
+
+    padding:18px;
+
+    overflow-y:auto;
+
+    background:#fbf7f2;
+
+}
+
+.chat-message{
+
+    display:flex;
+
+    margin-bottom:13px;
+
+}
+
+.chat-message.bot{
+
+    justify-content:flex-start;
+
+}
+
+.chat-message.user{
+
+    justify-content:flex-end;
+
+}
+
+.chat-bubble{
+
+    max-width:82%;
+
+    padding:11px 14px;
+
+    border-radius:15px;
+
+    font-size:13px;
+
+    line-height:1.55;
+
+}
+
+.chat-message.bot .chat-bubble{
+
+    background:#fff;
+
+    color:#352820;
+
+    border:1px solid #eadfd7;
+
+    border-bottom-left-radius:5px;
+
+}
+
+.chat-message.user .chat-bubble{
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    border-bottom-right-radius:5px;
+
+}
+
+
+/* QUICK OPTIONS */
+
+.chat-quick-options{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-top:8px;
+
+}
+
+.chat-quick-btn{
+
+    border:1px solid #e2d1c5;
+
+    background:#fffaf6;
+
+    color:#8a5038;
+
+    border-radius:20px;
+
+    padding:8px 11px;
+
+    font-size:11px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.chat-quick-btn:hover{
+
+    background:#f4e4d9;
+
+    border-color:#c8957b;
+
+}
+
+
+/* TYPING */
+
+.chat-typing{
+
+    display:none!important;
+
+    margin-bottom:12px;
+
+}
+
+.chat-typing.show{
+
+    display:flex!important;
+
+}
+
+.typing-bubble{
+
+    background:#fff;
+
+    border:1px solid #eadfd7;
+
+    border-radius:15px;
+
+    padding:11px 14px;
+
+}
+
+.typing-bubble span{
+
+    display:inline-block;
+
+    width:6px;
+
+    height:6px;
+
+    background:#b98972;
+
+    border-radius:50%;
+
+    margin:0 2px;
+
+    animation:typing 1.2s infinite;
+
+}
+
+.chat-typing span:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.chat-typing span:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+@keyframes typing{
+
+    0%,60%,100%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+    30%{
+
+        transform:translateY(-4px);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* CHAT INPUT */
+
+.zyngen-chat-input-area{
+
+    padding:11px;
+
+    background:#fff;
+
+    border-top:1px solid #eee5de;
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.zyngen-chat-input{
+
+    flex:1;
+
+    height:42px;
+
+    border:1px solid #e2d8d0;
+
+    border-radius:22px;
+
+    padding:0 15px;
+
+    outline:none;
+
+    font-size:13px;
+
+    background:#fcfaf8;
+
+}
+
+.zyngen-chat-input:focus{
+
+    border-color:#b97857;
+
+    background:#fff;
+
+}
+
+.zyngen-chat-send{
+
+    width:42px;
+
+    height:42px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:#8f4f35;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.2s;
+
+}
+
+.zyngen-chat-send:hover{
+
+    background:#713c29;
+
+    transform:scale(1.08);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .hero-inner{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding-top:60px;
+    }
+
+    .hero-visual{
+        min-height:380px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .natural-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    header{
+
+        height:70px;
+
+        padding:0 5%;
+
+    }
+
+    .logo img{
+
+        width:43px;
+
+        height:43px;
+
+    }
+
+    .logo-company{
+
+        font-size:17px;
+
+    }
+
+    .logo-sub{
+
+        font-size:7px;
+
+    }
+
+    .nav{
+
+        gap:8px;
+
+    }
+
+    .nav a{
+
+        display:none;
+
+    }
+
+    .cart-button{
+
+        padding:10px 13px;
+
+        font-size:11px;
+
+    }
+
+    .hero{
+
+        padding:55px 5%;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+        letter-spacing:-2.5px;
+
+    }
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+    .hero-visual{
+
+        min-height:350px;
+
+    }
+
+    .hero-circle{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+    .hero-circle-inner{
+
+        width:190px;
+
+        height:190px;
+
+    }
+
+    .hero-circle-inner .leaf{
+
+        width:65px;
+
+        height:65px;
+
+    }
+
+    .hero-circle-inner .leaf img{
+
+        width:62px;
+
+        height:62px;
+
+    }
+
+    .hero-circle-inner strong{
+
+        font-size:20px;
+
+    }
+
+    .hero-circle-inner span{
+
+        font-size:9px;
+
+    }
+
+    .float-one{
+
+        right:-5px;
+
+    }
+
+    .float-two{
+
+        left:-5px;
+
+    }
+
+    .float-three{
+
+        right:0;
+
+    }
+
+    .floating{
+
+        padding:12px 14px;
+
+    }
+
+    .floating strong{
+
+        font-size:12px;
+
+    }
+
+    .floating span{
+
+        font-size:9px;
+
+    }
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-heading h2{
+
+        font-size:37px;
+
+    }
+
+    .natural-title{
+
+        font-size:38px;
+
+    }
+
+    .natural-points{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .modal-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .modal-image{
+
+        min-height:260px;
+
+    }
+
+    .modal-info{
+
+        padding:30px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-group.full{
+
+        grid-column:auto;
+
+    }
+
+}
+
+
+/* MOBILE CHAT */
+
+@media(max-width:600px){
+
+    .zyngen-chat-button{
+
+        right:16px;
+
+        bottom:16px;
+
+        width:58px;
+
+        height:58px;
+
+    }
+
+    .zyngen-chatbox{
+
+        right:10px;
+
+        bottom:85px;
+
+        width:
+            calc(100vw - 20px);
+
+        height:
+            calc(100vh - 120px);
+
+        max-height:600px;
+
+        border-radius:20px;
+
+    }
+
+} /* close MOBILE CHAT @media */
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   PACKAGE SELECTOR / CART ENHANCEMENTS
+========================================================= */
+.package-selector{margin:20px 0 6px;}
+.package-selector label{display:block;margin-bottom:8px;font-size:12px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;}
+.package-select{width:100%;padding:13px 14px;border:1px solid #dfd1c4;border-radius:12px;background:#fff;font-size:15px;color:#30251f;outline:none;}
+.package-select:focus{border-color:#a85c3b;box-shadow:0 0 0 3px rgba(168,92,59,.12);}
+.cart-item-info{flex:1;min-width:0;}
+.cart-item-info h4{margin-bottom:7px;}
+.cart-size{display:inline-block;padding:4px 8px;border-radius:999px;background:#f4ebe3;color:#8b4e35;font-size:11px;font-weight:800;margin-bottom:8px;}
+.cart-quantity-controls{display:flex;align-items:center;gap:8px;margin-top:8px;}
+.qty-btn{width:28px;height:28px;border:1px solid #dfd1c4;background:#fff;border-radius:8px;font-weight:800;}
+.qty-value{min-width:22px;text-align:center;font-weight:800;}
+.cart-toast{position:fixed;right:24px;bottom:24px;z-index:3000;background:#30251f;color:#fff;padding:13px 18px;border-radius:12px;box-shadow:0 15px 40px rgba(48,37,31,.22);font-size:13px;opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s;}
+.cart-toast.show{opacity:1;transform:translateY(0);}
+@media(max-width:700px){.cart-toast{right:14px;left:14px;bottom:14px;text-align:center;}.package-select{font-size:14px;}}
+
+/* =========================================================
+   FSSAI SECTION
+   ZYNGEN AGRI - BROWN THEME
+========================================================= */
+
+.fssai-section {
+    width: 100%;
+    padding: 90px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(166, 91, 52, 0.07),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #faf5ef 0%,
+            #f8eee4 50%,
+            #fffaf5 100%
+        );
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.fssai-container {
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.45fr 0.75fr;
+
+    background: #ffffff;
+
+    border: 1px solid #eadbd0;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(104, 57, 35, 0.10);
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.fssai-content {
+    padding: 65px 70px;
+}
+
+
+/* =========================================================
+   FSSAI BADGE
+========================================================= */
+
+.fssai-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 18px;
+
+    background: #f8eee7;
+
+    border: 1px solid #e4cfc0;
+
+    border-radius: 50px;
+
+    color: #8d4c2f;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+
+.fssai-check {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #9a5131;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.fssai-content h2 {
+    margin: 26px 0 18px;
+
+    color: #2c211c;
+
+    font-size: 43px;
+
+    line-height: 1.12;
+
+    font-weight: 750;
+
+    letter-spacing: -1px;
+}
+
+
+.fssai-content h2 span {
+    display: block;
+
+    color: #a65734;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.fssai-content p {
+    max-width: 650px;
+
+    margin: 0 0 14px;
+
+    color: #74675f;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TRUST ITEMS
+========================================================= */
+
+.fssai-trust-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+
+.fssai-trust-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding: 15px 12px;
+
+    background: #fcf8f4;
+
+    border: 1px solid #eee1d7;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.fssai-trust-item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(112, 60, 37, 0.08);
+}
+
+
+/* =========================================================
+   TRUST ICON
+========================================================= */
+
+.trust-icon {
+    min-width: 26px;
+    height: 26px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #a65734;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.fssai-trust-item strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #38271f;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+}
+
+
+.fssai-trust-item small {
+    display: block;
+
+    color: #8b7b71;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   RIGHT LOGO AREA
+========================================================= */
+
+.fssai-logo-area {
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f3dfcf 0%,
+            #e9cbb7 45%,
+            #dfb99f 100%
+        );
+
+    position: relative;
+}
+
+
+/* Decorative Circle */
+
+.fssai-logo-area::before {
+    content: "";
+
+    position: absolute;
+
+    width: 310px;
+    height: 310px;
+
+    border: 1px solid rgba(142, 73, 44, 0.18);
+
+    border-radius: 50%;
+}
+
+
+.fssai-logo-area::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(142, 73, 44, 0.14);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   LOGO CARD
+========================================================= */
+
+.fssai-logo-card {
+    width: 255px;
+
+    min-height: 365px;
+
+    padding: 30px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 20px 45px rgba(94, 48, 28, 0.16);
+
+    position: relative;
+
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACTUAL FSSAI LOGO
+========================================================= */
+
+.fssai-logo {
+    width: 145px;
+
+    height: 145px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.logo-divider {
+    width: 50px;
+    height: 3px;
+
+    margin: 3px 0 15px;
+
+    background: #a65734;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   LOGO CARD TEXT
+========================================================= */
+
+.fssai-logo-card h3 {
+    margin: 0;
+
+    color: #33251e;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.fssai-logo-card h4 {
+    margin: 3px 0 8px;
+
+    color: #a65734;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+
+.fssai-logo-card p {
+    margin: 0 0 18px;
+
+    color: #87766b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.fssai-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 14px;
+
+    background: #f8eee7;
+
+    border: 1px solid #ead4c5;
+
+    border-radius: 30px;
+
+    color: #8d4c2f;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.fssai-status span {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #a65734;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .fssai-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fssai-logo-area {
+        min-height: 430px;
+    }
+
+    .fssai-trust-row {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .fssai-section {
+        padding: 55px 15px;
+    }
+
+    .fssai-content {
+        padding: 40px 25px;
+    }
+
+    .fssai-content h2 {
+        font-size: 32px;
+    }
+
+    .fssai-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .fssai-logo-area {
+        min-height: 390px;
+
+        padding: 30px 15px;
+    }
+
+    .fssai-logo-area::before {
+        width: 270px;
+        height: 270px;
+    }
+
+    .fssai-logo-area::after {
+        width: 220px;
+        height: 220px;
+    }
+
+    .fssai-logo-card {
+        width: 235px;
+        min-height: 340px;
+    }
+
+    .fssai-logo {
+        width: 125px;
+        height: 125px;
+    }
+
+}
+
+
+/* =========================================================
+   ZYNGEN AGRI - LAVENDER + CORAL + MIDNIGHT THEME
+   Premium Modern Theme
+========================================================= */
+
+:root{
+    --bg:#FAF8FF;
+    --primary:#E85D75;
+    --primary-dark:#C94760;
+    --primary-light:#F58DA0;
+    --midnight:#3D405B;
+    --midnight-dark:#292B40;
+    --violet:#9B8AFB;
+    --violet-dark:#7767D9;
+    --violet-light:#C8C0FF;
+    --light:#F1EDFF;
+    --white:#FFFFFF;
+    --text:#29263D;
+    --muted:#706C82;
+    --border:#E5E0F2;
+    --soft-pink:#FFF0F3;
+}
+
+/* PAGE */
+body{
+    background:
+        radial-gradient(circle at 5% 5%,rgba(155,138,251,.10),transparent 28%),
+        radial-gradient(circle at 95% 30%,rgba(232,93,117,.08),transparent 30%),
+        linear-gradient(180deg,#FFFFFF 0%,#FAF8FF 55%,#F5F1FF 100%) !important;
+    color:var(--text) !important;
+}
+
+/* HEADER */
+header{
+    background:rgba(255,255,255,.92) !important;
+    border-bottom:1px solid var(--border) !important;
+    box-shadow:0 6px 28px rgba(61,64,91,.07) !important;
+}
+.logo-company{color:var(--midnight) !important;}
+.logo-company span{color:var(--primary) !important;}
+.logo-sub{color:var(--violet-dark) !important;}
+.nav a{color:var(--midnight) !important;}
+.nav a:hover{color:var(--primary) !important;}
+
+/* CART */
+.cart-button{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark)) !important;
+    box-shadow:0 8px 20px rgba(232,93,117,.20);
+}
+.cart-button:hover{
+    background:var(--primary-dark) !important;
+}
+.cart-count{
+    background:var(--violet) !important;
+    color:#fff !important;
+}
+
+/* HERO */
+.hero{
+    background:
+        radial-gradient(circle at 8% 20%,rgba(155,138,251,.20),transparent 32%),
+        radial-gradient(circle at 90% 75%,rgba(232,93,117,.16),transparent 30%),
+        linear-gradient(135deg,#F1EDFF 0%,#FAF8FF 55%,#FFF0F3 100%) !important;
+}
+.hero::before{
+    border-color:rgba(155,138,251,.22) !important;
+}
+.hero::after{
+    border-color:rgba(232,93,117,.20) !important;
+}
+.hero-label{
+    background:#E8E2FF !important;
+    color:var(--midnight) !important;
+}
+.hero h1{
+    color:var(--midnight) !important;
+}
+.hero h1 span{
+    color:var(--primary) !important;
+}
+.hero p{
+    color:var(--muted) !important;
+}
+
+/* BUTTONS */
+.primary-btn,.add-btn,.modal-add{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark)) !important;
+    box-shadow:0 10px 25px rgba(232,93,117,.18);
+}
+.primary-btn:hover,.add-btn:hover,.modal-add:hover{
+    background:var(--primary-dark) !important;
+    box-shadow:0 15px 32px rgba(232,93,117,.28);
+}
+.secondary-btn{
+    background:#FFFFFF !important;
+    border-color:#DCD6EE !important;
+    color:var(--midnight) !important;
+}
+.secondary-btn:hover{
+    background:var(--light) !important;
+    border-color:var(--violet-light) !important;
+}
+
+/* HERO VISUAL */
+.hero-circle{
+    background:
+        radial-gradient(circle,#FFFFFF 0%,#F8F5FF 58%,#EEE9FF 100%) !important;
+    border-color:#DDD6F1 !important;
+    box-shadow:0 35px 85px rgba(61,64,91,.16) !important;
+}
+.hero-circle::before{
+    border-color:rgba(155,138,251,.55) !important;
+}
+.hero-circle::after{
+    border-color:rgba(232,93,117,.30) !important;
+}
+.hero-circle-inner{
+    background:linear-gradient(145deg,var(--midnight),#565A7D) !important;
+    box-shadow:inset 0 0 45px rgba(155,138,251,.15) !important;
+}
+.hero-circle-inner span{
+    color:#DDD9FF !important;
+}
+
+/* FLOATING CARDS */
+.floating{
+    background:rgba(255,255,255,.96) !important;
+    border-color:var(--border) !important;
+    box-shadow:0 18px 42px rgba(61,64,91,.13) !important;
+}
+.floating strong{
+    color:var(--midnight) !important;
+}
+.floating span{
+    color:var(--muted) !important;
+}
+
+/* CATEGORY */
+.category-bar{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+}
+.category-btn{
+    background:#F4F1FC !important;
+    border-color:#E0DAF0 !important;
+    color:var(--midnight) !important;
+}
+.category-btn:hover,.category-btn.active{
+    background:var(--primary) !important;
+    border-color:var(--primary) !important;
+    color:#FFFFFF !important;
+}
+
+/* SECTION HEADINGS */
+.eyebrow{
+    color:var(--primary) !important;
+}
+.section-heading h2{
+    color:var(--midnight) !important;
+}
+.section-heading p{
+    color:var(--muted) !important;
+}
+
+/* PRODUCT CARDS */
+.product-card{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+    box-shadow:0 8px 30px rgba(61,64,91,.06) !important;
+}
+.product-card:hover{
+    transform:translateY(-6px);
+    border-color:#D8D0F0 !important;
+    box-shadow:0 25px 55px rgba(61,64,91,.14) !important;
+}
+.product-image{
+    background:linear-gradient(135deg,#F1EDFF,#FFF0F3) !important;
+}
+.product-badge{
+    background:#EAE5FF !important;
+    color:var(--midnight) !important;
+}
+.product-category{
+    color:var(--primary) !important;
+}
+.product-info h3{
+    color:var(--midnight) !important;
+}
+.product-info p{
+    color:var(--muted) !important;
+}
+.view-btn{
+    background:#FFFFFF !important;
+    border-color:#DDD7ED !important;
+    color:var(--midnight) !important;
+}
+.view-btn:hover{
+    background:var(--light) !important;
+    border-color:var(--violet-light) !important;
+}
+.card-package-select,.card-qty-input{
+    background:#FAF9FE !important;
+    border-color:#DDD7ED !important;
+    color:var(--text) !important;
+}
+.card-package-select:focus,.card-qty-input:focus{
+    border-color:var(--violet) !important;
+    box-shadow:0 0 0 3px rgba(155,138,251,.14) !important;
+}
+
+/* NATURAL / ABOUT */
+.natural-section{
+    background:
+        radial-gradient(circle at 90% 15%,rgba(232,93,117,.12),transparent 30%),
+        linear-gradient(135deg,#F1EDFF,#FFF5F7) !important;
+}
+.natural-title{
+    color:var(--midnight) !important;
+}
+.natural-title span{
+    color:var(--primary) !important;
+}
+.natural-text{
+    color:var(--muted) !important;
+}
+.natural-point{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+}
+.natural-point strong{
+    color:var(--midnight) !important;
+}
+.natural-point span{
+    color:var(--muted) !important;
+}
+
+/* PROCESS */
+.process{
+    background:#FFFFFF !important;
+}
+.process-card{
+    background:#F7F4FD !important;
+    border-color:var(--border) !important;
+}
+.process-card:hover{
+    box-shadow:0 20px 45px rgba(61,64,91,.12) !important;
+    border-color:#D9D1EF !important;
+}
+.process-number{
+    color:var(--primary) !important;
+}
+.process-card h3{
+    color:var(--midnight) !important;
+}
+.process-card p{
+    color:var(--muted) !important;
+}
+
+/* FSSAI */
+.fssai-section{
+    background:
+        radial-gradient(circle at 10% 20%,rgba(155,138,251,.13),transparent 34%),
+        linear-gradient(135deg,#F1EDFF,#FFF8FA) !important;
+}
+.fssai-container{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+    box-shadow:0 18px 45px rgba(61,64,91,.08) !important;
+}
+.fssai-badge{
+    background:#EEE9FF !important;
+    border-color:#D9D0FF !important;
+    color:var(--midnight) !important;
+}
+
+/* CTA */
+.cta{
+    background:
+        radial-gradient(circle at 15% 20%,rgba(155,138,251,.28),transparent 30%),
+        radial-gradient(circle at 90% 80%,rgba(232,93,117,.25),transparent 32%),
+        linear-gradient(135deg,var(--midnight),#30334D) !important;
+}
+.cta p{
+    color:#DCD9EA !important;
+}
+.cta-btn{
+    background:#FFFFFF !important;
+    color:var(--midnight) !important;
+}
+.cta-btn:hover{
+    background:#F1EDFF !important;
+}
+
+/* FOOTER */
+footer{
+    background:#25273A !important;
+    color:#DDDCEC !important;
+}
+.footer-logo span{
+    color:var(--primary-light) !important;
+}
+.footer-sub{
+    color:#BDB9D2 !important;
+}
+.footer-business{
+    color:#E5E2F0 !important;
+}
+footer p{
+    color:#AAA7BD !important;
+}
+.footer-copy{
+    border-color:rgba(255,255,255,.10) !important;
+    color:#858399 !important;
+}
+
+/* CART DRAWER */
+.cart-overlay{
+    background:rgba(41,38,61,.58) !important;
+}
+.cart-drawer{
+    background:#FFFFFF !important;
+}
+.cart-header{
+    border-color:var(--border) !important;
+}
+.close-cart{
+    background:#F1EDFF !important;
+    color:var(--midnight) !important;
+}
+.cart-item{
+    border-color:#ECE8F4 !important;
+}
+.cart-item-image{
+    background:#F1EDFF !important;
+}
+.cart-size{
+    background:#EEE9FF !important;
+    color:var(--midnight) !important;
+}
+.remove-item{
+    color:var(--primary) !important;
+}
+.cart-footer{
+    border-color:var(--border) !important;
+}
+.checkout-btn{
+    background:linear-gradient(135deg,var(--midnight),#535775) !important;
+}
+.checkout-btn:hover{
+    background:var(--midnight-dark) !important;
+}
+
+/* PRODUCT MODAL */
+.product-modal{
+    background:#FFFFFF !important;
+}
+.modal-close{
+    background:#F1EDFF !important;
+    color:var(--midnight) !important;
+}
+.modal-image{
+    background:linear-gradient(135deg,#F1EDFF,#FFF0F3) !important;
+}
+.modal-info small{
+    color:var(--primary) !important;
+}
+.modal-info h2{
+    color:var(--midnight) !important;
+}
+.modal-info p{
+    color:var(--muted) !important;
+}
+.modal-list li{
+    border-color:#ECE8F4 !important;
+    color:var(--text) !important;
+}
+
+/* ENQUIRY */
+.enquiry-box{
+    background:#FFFFFF !important;
+    box-shadow:0 25px 70px rgba(61,64,91,.15) !important;
+}
+.enquiry-box>p{
+    color:var(--muted) !important;
+}
+.enquiry-close{
+    background:#F1EDFF !important;
+    color:var(--midnight) !important;
+}
+.form-group label{
+    color:var(--midnight) !important;
+}
+.form-group input,.form-group textarea{
+    background:#FAF9FE !important;
+    border-color:#DDD7ED !important;
+    color:var(--text) !important;
+}
+.form-group input:focus,.form-group textarea:focus{
+    border-color:var(--violet) !important;
+    background:#FFFFFF !important;
+    box-shadow:0 0 0 3px rgba(155,138,251,.12) !important;
+}
+.submit-enquiry{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark)) !important;
+}
+.submit-enquiry:hover{
+    background:var(--primary-dark) !important;
+}
+
+/* CHATBOT */
+.zyngen-chat-button{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark)) !important;
+    box-shadow:0 12px 32px rgba(232,93,117,.34) !important;
+}
+.zyngen-chatbox{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+}
+.zyngen-chat-header{
+    background:linear-gradient(135deg,var(--midnight),#555A7C) !important;
+}
+.chatbot-online-dot{
+    background:var(--primary-light) !important;
+}
+.zyngen-chat-messages{
+    background:#F7F4FD !important;
+}
+.chat-message.bot .chat-bubble{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+    color:var(--text) !important;
+}
+.chat-message.user .chat-bubble{
+    background:var(--primary) !important;
+}
+.chat-quick-btn{
+    background:#F1EDFF !important;
+    border-color:#DDD5F0 !important;
+    color:var(--midnight) !important;
+}
+.chat-quick-btn:hover{
+    background:#E7E1FF !important;
+    border-color:var(--violet-light) !important;
+}
+.zyngen-chat-input-area{
+    background:#FFFFFF !important;
+    border-color:var(--border) !important;
+}
+.zyngen-chat-input{
+    background:#FAF9FE !important;
+    border-color:#DDD7ED !important;
+}
+.zyngen-chat-input:focus{
+    border-color:var(--violet) !important;
+    background:#FFFFFF !important;
+}
+.zyngen-chat-send{
+    background:var(--violet-dark) !important;
+}
+.zyngen-chat-send:hover{
+    background:var(--midnight) !important;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background:#F1EDFF;
+}
+::-webkit-scrollbar-thumb{
+    background:#C4BBF0;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:var(--violet);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero{
+        background:
+            radial-gradient(circle at 50% 0%,rgba(155,138,251,.16),transparent 35%),
+            linear-gradient(180deg,#F1EDFF,#FAF8FF) !important;
+    }
+    .product-card{
+        box-shadow:0 8px 24px rgba(61,64,91,.08) !important;
+    }
+}
+
+</style>
+</head>
+<body>
+<!-- =========================================================
+     HEADER
+========================================================= -->
+<header>
+<a class="logo" href="index.html">
+<img alt="ZynGen Enterprises Logo" src="logo.png"/>
+<div class="logo-text">
+<div class="logo-company">
+                ZynGen
+            </div>
+<div class="logo-sub">
+                Enterprises
+            </div>
+</div>
+</a>
+<nav class="nav">
+<a href="index.html">
+            Home
+        </a>
+<a href="#products">
+            Products
+        </a>
+<a href="#about">
+            About
+        </a>
+<a href="#process">
+            Our Approach
+        </a>
+<button class="cart-button" onclick="openCart()">
+
+            🛒 Cart
+
+            <span class="cart-count" id="cartCount">
+                0
+            </span>
+</button>
+</nav>
+</header>
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<div class="hero-label">
+                ZynGen · Agri &amp; Natural Products
+            </div>
+<h1>
+
+                Naturally Good.<br/>
+<span>Simply Better.</span>
+</h1>
+<p>
+
+                Discover A Carefully Selected Range Of
+                Agriculture, Food And Natural Products
+                Developed With A Focus On Quality,
+                Authenticity And Everyday Use.
+
+            </p>
+<div class="hero-buttons">
+<a class="primary-btn" href="#products">
+                    Explore Products →
+                </a>
+<button class="secondary-btn" onclick="openEnquiry()">
+                    Make An Enquiry
+                </button>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-circle">
+<div class="hero-circle-inner">
+<div class="leaf">
+<img alt="ZynGen Natural Product" src="nature.jpeg"/>
+</div>
+<strong>
+                        ZynGen
+                    </strong>
+<span>
+                        Agri · Food · Natural
+                    </span>
+</div>
+</div>
+<div class="floating float-one">
+<strong>
+                    Natural Products
+                </strong>
+<span>
+                    Selected With Care
+                </span>
+</div>
+<div class="floating float-two">
+<strong>
+                    Quality Focused
+                </strong>
+<span>
+                    From Source To Customer
+                </span>
+</div>
+<div class="floating float-three">
+<strong>
+                    Everyday Essentials
+                </strong>
+<span>
+                    Made For Modern Living
+                </span>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================
+     FSSAI SECTION
+========================================================= -->
+<section class="fssai-section">
+<div class="fssai-container">
+<!-- LEFT CONTENT -->
+<div class="fssai-content">
+<div class="fssai-badge">
+<span class="fssai-check">✓</span>
+                FSSAI Registered
+            </div>
+<h2>
+                Food Safety Is
+                <span>Our Priority.</span>
+</h2>
+<p>
+                ZynGen Enterprises Follows Food Safety And Quality
+                Practices For Our Food And Natural Product Range.
+            </p>
+<p>
+                Our Food Products Are Supported By FSSAI Registration,
+                Reflecting Our Commitment To Quality, Food Safety
+                And Consumer Trust.
+            </p>
+<div class="fssai-trust-row">
+<div class="fssai-trust-item">
+<span class="trust-icon">✓</span>
+<div>
+<strong>FSSAI Registered</strong>
+
+<small>Food Safety And Compliance</small>
+</div>
+</div>
+<div class="fssai-trust-item">
+<span class="trust-icon">✓</span>
+<div>
+<strong>Quality Focused</strong>
+<small>Carefully Selected Products</small>
+</div>
+</div>
+<div class="fssai-trust-item">
+<span class="trust-icon">✓</span>
+<div>
+<strong>Consumer Trust</strong>
+<small>Responsible Food Practices</small>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT FSSAI LOGO -->
+<div class="fssai-logo-area">
+<div class="fssai-logo-card">
+<!--
+                    Replace fssai-logo.png with your
+                    actual FSSAI logo file name.
+                -->
+<img alt="FSSAI Registered" class="fssai-logo" src="fssai-logo.png"/>
+<div class="logo-divider"></div>
+<h3>Food Safety</h3>
+<h4>Registered</h4>
+<p>Lic.No. : 22426580000204</p>
+<p>
+                    ZynGen Enterprises
+                </p>
+<div class="fssai-status">
+<span>✓</span>
+                    FSSAI Registered
+                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================
+     CATEGORY BAR
+========================================================= -->
+<section class="category-bar">
+<div class="category-inner">
+<button class="category-btn active" onclick="filterProducts('all',this)">
+            All Products
+        </button>
+<button class="category-btn" onclick="filterProducts('oil',this)">
+            Natural Oils
+        </button>
+<button class="category-btn" onclick="filterProducts('food',this)">
+            Food Products
+        </button>
+<button class="category-btn" onclick="filterProducts('honey',this)">
+            Honey
+        </button>
+<button class="category-btn" onclick="filterProducts('tea',this)">
+            Tea Products
+        </button>
+</div>
+</section>
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+<section class="products" id="products">
+<div class="container">
+<div class="section-heading">
+<div class="eyebrow">
+                ZynGen Natural Products
+            </div>
+<h2>
+                Pure Products.<br/>
+                Naturally Selected.
+            </h2>
+<p>
+
+                Explore Our Range Of Natural Oils,
+                Food Products, Honey And Tea Products Selected With A Focus On
+                Quality And Everyday Use.
+
+            </p>
+</div>
+<div class="product-grid" id="productGrid">
+<!-- COCONUT OIL -->
+<div class="product-card" data-category="oil">
+<div class="product-image">
+<img alt="ZynGen Coconut Oil" onerror="this.style.display='none'" src="coconut-oil.jpeg"/>
+<div class="product-badge">
+                        Natural
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Natural Oil
+                    </div>
+<h3>
+                        Coconut Oil
+                    </h3>
+<p>
+                        Naturally Selected Coconut Oil
+                        Suitable For Everyday Use.<br/>
+                        1L , 500Ml , 300Ml
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Coconut Oil',
+                                'Natural Oil',
+                                'coconut-oil.jpeg',
+                                'Naturally selected coconut oil suitable for everyday food and household use.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Coconut Oil',
+                                'coconut-oil.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- GROUNDNUT OIL -->
+<div class="product-card" data-category="oil">
+<div class="product-image">
+<img alt="ZynGen Groundnut Oil" onerror="this.style.display='none'" src="groundnut-oil.jpeg"/>
+<div class="product-badge">
+                        Natural
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Natural Oil
+                    </div>
+<h3>
+                        Groundnut Oil
+                    </h3>
+<p>
+                        Selected Groundnut Oil For
+                        Everyday Cooking Requirements.<br/>
+                        1L , 500Ml , 300Ml
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Groundnut Oil',
+                                'Natural Oil',
+                                'groundnut-oil.jpeg',
+                                'Selected groundnut oil suitable for everyday cooking and food applications.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Groundnut Oil',
+                                'groundnut-oil.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- CASTOR OIL -->
+<div class="product-card" data-category="oil">
+<div class="product-image">
+<img alt="ZynGen Castor Oil" onerror="this.style.display='none'" src="castor-oil.jpeg"/>
+<div class="product-badge">
+                        Natural
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Natural Oil
+                    </div>
+<h3>
+                        Castor Oil
+                    </h3>
+<p>
+                        Carefully Selected Castor Oil
+                        For Suitable Applications.<br/>
+                        1L , 500Ml , 300Ml
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Castor Oil',
+                                'Natural Oil',
+                                'castor-oil.jpeg',
+                                'Carefully selected castor oil intended for suitable natural product and household applications.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Castor Oil',
+                                'castor-oil.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- SESAME OIL -->
+<div class="product-card" data-category="oil">
+<div class="product-image">
+<img alt="ZynGen Sesame Oil" onerror="this.style.display='none'" src="sesame-oil.jpeg"/>
+<div class="product-badge">
+                        Natural
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Natural Oil
+                    </div>
+<h3>
+                        Sesame Oil
+                    </h3>
+<p>
+                        Naturally Selected Sesame Oil
+                        For Everyday Food Use.<br/>
+                        1L , 500Ml , 300Ml
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Sesame Oil',
+                                'Natural Oil',
+                                'sesame-oil.jpeg',
+                                'Naturally selected sesame oil suitable for everyday cooking and food applications.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Sesame Oil',
+                                'sesame-oil.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- BROWN SUGAR -->
+<div class="product-card" data-category="food">
+<div class="product-image">
+<img alt="ZynGen Pure Brown Sugar" onerror="this.style.display='none'" src="brown-sugar.jpeg"/>
+<div class="product-badge">
+                        Food
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Food Products
+                    </div>
+<h3>
+                        Pure Brown Sugar
+                    </h3>
+<p>
+                        Brown Sugar Suitable For Beverages,
+                        Cooking And Baking.<br/>
+                        1Kg , 500G , 250G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Pure Brown Sugar',
+                                'Food Products',
+                                'brown-sugar.jpeg',
+                                'Pure brown sugar suitable for beverages, cooking and baking applications.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Pure Brown Sugar',
+                                'brown-sugar.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- PURE HONEY -->
+<div class="product-card" data-category="honey">
+<div class="product-image">
+<img alt="ZynGen Pure Honey" onerror="this.style.display='none'" src="pure-honey.jpeg"/>
+<div class="product-badge">
+                        Natural
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Natural Honey
+                    </div>
+<h3>
+                        Pure Honey
+                    </h3>
+<p>
+                        Naturally Sourced Honey Selected
+                        With A Focus On Quality.<br/>
+                        1Kg , 500G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Pure Honey',
+                                'Natural Honey',
+                                'pure-honey.jpeg',
+                                'Naturally sourced honey selected with a focus on quality and everyday use.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Pure Honey',
+                                'pure-honey.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- SIGNATURE TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Signature Tea" onerror="this.style.display='none'" src="signature-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Signature Tea
+                    </h3>
+<p>
+                        Signature tea blend selected for a distinctive tea experience.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Masala Tea',
+                                'Tea Products',
+                                'masala-tea.jpeg',
+                                'Aromatic Masala Tea Blend With A Rich And Comforting Flavor.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Masala Tea',
+                                'masala-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- MASALA TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Masala Tea" onerror="this.style.display='none'" src="masala-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Masala Tea
+                    </h3>
+<p>
+                        Aromatic Masala Tea Blend With A Rich And Comforting Flavor.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Masala Tea',
+                                'Tea Products',
+                                'masala-tea.jpeg',
+                                'Aromatic Masala Tea Blend With A Rich And Comforting Flavor.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Masala Tea',
+                                'masala-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- CARDAMOM TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Cardamom Tea" onerror="this.style.display='none'" src="cardamom-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Cardamom Tea
+                    </h3>
+<p>
+                        Fragrant Cardamom Tea With A Naturally Refreshing And Distinctive Taste.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Cardamom Tea',
+                                'Tea Products',
+                                'cardamom-tea.jpeg',
+                                'Fragrant Cardamom Tea With A Naturally Refreshing And Distinctive Taste.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Cardamom Tea',
+                                'cardamom-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+
+<!-- KASHMIRI TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Kashmiri Tea" onerror="this.style.display='none'" src="kashmiri-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Kashmiri Tea
+                    </h3>
+<p>
+                        Delicately Crafted Kashmiri Tea Inspired By Traditional Tea Enjoyment.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Kashmiri Tea',
+                                'Tea Products',
+                                'kashmiri-tea.jpeg',
+                                'Delicately Crafted Kashmiri Tea Inspired By Traditional Tea Enjoyment.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Kashmiri Tea',
+                                'kashmiri-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- ROSE TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Rose Tea" onerror="this.style.display='none'" src="rose-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Rose Tea
+                    </h3>
+<p>
+                        Floral Rose Tea With A Gentle Aroma And Smooth Tea Experience.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Rose Tea',
+                                'Tea Products',
+                                'rose-tea.jpeg',
+                                'Floral Rose Tea With A Gentle Aroma And Smooth Tea Experience.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Rose Tea',
+                                'rose-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- HIBISCUS TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Hibiscus Tea" onerror="this.style.display='none'" src="hibiscus-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Hibiscus Tea
+                    </h3>
+<p>
+                        Refreshing Hibiscus Tea With A Naturally Tangy And Floral Character.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Hibiscus Tea',
+                                'Tea Products',
+                                'hibiscus-tea.jpeg',
+                                'Refreshing Hibiscus Tea With A Naturally Tangy And Floral Character.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Hibiscus Tea',
+                                'hibiscus-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- BLUE TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Blue Tea" onerror="this.style.display='none'" src="blue-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Blue Tea
+                    </h3>
+<p>
+                        Naturally Colorful Blue Tea With A Distinctive And Refreshing Tea Experience.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Blue Tea',
+                                'Tea Products',
+                                'blue-tea.jpeg',
+                                'Naturally Colorful Blue Tea With A Distinctive And Refreshing Tea Experience.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Blue Tea',
+                                'blue-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- HIBISCUS TEA -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Chocolate Tea" onerror="this.style.display='none'" src="chocolate-tea.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Tea Products
+                    </div>
+<h3>
+                        Chocolate Tea
+                    </h3>
+<p>
+                        A Rich And Comforting Chocolate Tea With A Smooth Cocoa Aroma And A Naturally Sweet And Refreshing Character.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Chocolate Tea',
+                                'Tea Products',
+                                'chocolate-tea.jpeg',
+                                'Refreshing Chocolate Tea With A Naturally Tangy And Floral Character.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Chocolate Tea',
+                                'chocolate-tea.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+<!-- COFFEE -->
+<div class="product-card" data-category="tea">
+<div class="product-image">
+<img alt="ZynGen Ginger Tea" onerror="this.style.display='none'" src="coffee.jpeg"/>
+<div class="product-badge">
+                        Tea
+                    </div>
+</div>
+<div class="product-info">
+<div class="product-category">
+                        Coffee Products
+                    </div>
+<h3>
+                        Coffee
+                    </h3>
+<p>
+                        Coffee Blend With A Fresh And Invigorating Flavor.<br/>
+                        Wholesale , 1Kg , 500G , 250G , 100G
+                    </p>
+<div class="product-actions">
+<button class="view-btn" onclick="showProduct(
+                                'Coffee',
+                                'Coffee Products',
+                                'coffee-tea.jpeg',
+                                'Coffee Blend With A Fresh And Invigorating Flavor.'
+                            )">
+                            View Details
+                        </button>
+<button class="add-btn" onclick="addToCart(
+                                'Coffee',
+                                'coffee.jpeg'
+                            )">
+                            Add To Cart
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+<section class="natural-section" id="about">
+<div class="natural-grid">
+<div>
+<div class="eyebrow">
+                Our Philosophy
+            </div>
+<h2 class="natural-title">
+
+                From Nature<br/>
+<span>To Everyday Life.</span>
+</h2>
+</div>
+<div>
+<p class="natural-text">
+
+                At ZynGen Enterprises, Our Agri &amp; Natural
+                Products Division Focuses On Bringing
+                Carefully Selected Food, Agriculture And
+                Natural Products Closer To Customers
+                Through A Simple And Transparent Product
+                Experience.
+
+            </p>
+<div class="natural-points">
+<div class="natural-point">
+<strong>
+                        Quality Focus
+                    </strong>
+<span>
+                        Products Selected With Quality In Mind.
+                    </span>
+</div>
+<div class="natural-point">
+<strong>
+                        Natural Approach
+                    </strong>
+<span>
+                        Focus On Authentic Natural Products.
+                    </span>
+</div>
+<div class="natural-point">
+<strong>
+                        Customer First
+                    </strong>
+<span>
+                        Simple Enquiry And Ordering Experience.
+                    </span>
+</div>
+<div class="natural-point">
+<strong>
+                        Growing Range
+                    </strong>
+<span>
+                        New Products Can Be Added Easily.
+                    </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+<section class="process" id="process">
+<div class="container">
+<div class="section-heading">
+<div class="eyebrow">
+                Our Approach
+            </div>
+<h2>
+                Simple. Careful. Reliable.
+            </h2>
+<p>
+                From Product Selection To Customer
+                Enquiry, We Focus On Creating A Simple
+                And Reliable Experience.
+            </p>
+</div>
+<div class="process-grid">
+<div class="process-card">
+<div class="process-number">
+                    01
+                </div>
+<h3>
+                    Select
+                </h3>
+<p>
+                    Identify Suitable Agriculture,
+                    Food And Natural Products.
+                </p>
+</div>
+<div class="process-card">
+<div class="process-number">
+                    02
+                </div>
+<h3>
+                    Evaluate
+                </h3>
+<p>
+                    Focus On Quality, Usability And
+                    Customer Requirements.
+                </p>
+</div>
+<div class="process-card">
+<div class="process-number">
+                    03
+                </div>
+<h3>
+                    Present
+                </h3>
+<p>
+                    Make Product Information Simple And
+                    Easy For Customers To Understand.
+                </p>
+</div>
+<div class="process-card">
+<div class="process-number">
+                    04
+                </div>
+<h3>
+                    Deliver
+                </h3>
+<p>
+                    Convert Customer Enquiries Into A
+                    Clear And Convenient Order Process.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================
+     CTA
+========================================================= -->
+<section class="cta">
+<div class="cta-inner">
+<div class="eyebrow" style="color:#e2b898;">
+            Have A Requirement?
+        </div>
+<h2>
+            Looking For A Product?
+        </h2>
+<p>
+
+            Add Your Required Products To The Enquiry
+            Cart And Send Your Details To Our Team.
+            We Will Get Back To You With Availability
+            And Further Information.
+
+        </p>
+<button class="cta-btn" onclick="openEnquiry()">
+            Send Product Enquiry →
+        </button>
+</div>
+</section>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer>
+<div class="footer-brand">
+<img alt="ZynGen Enterprises Logo" src="logo.png"/>
+<div class="footer-logo">
+            ZynGen
+        </div>
+<div class="footer-sub">
+            Enterprises
+        </div>
+</div>
+<div class="footer-business">
+
+        Agri Products · Food Products · Natural Products
+
+    </div>
+<p>
+
+        Salem, Tamil Nadu, India
+        ·
+        +91 93634 04447
+        ·
+        agri.zyngen@gmail.com
+
+    </p>
+<div class="footer-copy">
+
+        © 2026 ZynGen Enterprises. All Rights Reserved.
+
+    </div>
+</footer>
+<!-- =========================================================
+     CART
+========================================================= -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+<div class="cart-header">
+<h3>
+            Your Product Cart
+        </h3>
+<button class="close-cart" onclick="closeCart()">
+            ×
+        </button>
+</div>
+<div class="cart-items" id="cartItems">
+<div class="empty-cart">
+
+            Your Product Cart Is Empty.
+
+            <br/><br/>
+
+            Add Products To Continue.
+
+        </div>
+</div>
+<div class="cart-footer">
+<p>
+
+            Your Selected Products Will Be
+            Included In The Shopping.
+
+        </p>
+<button class="checkout-btn" onclick="openEnquiry()">
+            Continue With Shopping →
+        </button>
+</div>
+</div>
+<!-- =========================================================
+     PRODUCT MODAL
+========================================================= -->
+<div class="modal-overlay" id="productModal" onclick="closeProduct(event)">
+<div class="product-modal" onclick="event.stopPropagation()">
+<button class="modal-close" onclick="closeProduct()">
+            ×
+        </button>
+<div class="modal-content">
+<div class="modal-image" id="modalImage">
+</div>
+<div class="modal-info">
+<small id="modalCategory">
+                    Natural Products
+                </small>
+<h2 id="modalTitle">
+                    Product
+                </h2>
+<p id="modalDescription">
+                    Product Description.
+                </p>
+<ul class="modal-list">
+<li>
+                        ✓ Quality-focused Product Selection
+                    </li>
+<li>
+                        ✓ Suitable For Everyday Use
+                    </li>
+<li>
+                        ✓ Product Enquiry Available
+                    </li>
+</ul>
+<div class="package-selector">
+<label for="modalPackageSize">Package Size</label>
+<select class="package-select" id="modalPackageSize"></select>
+</div>
+<button class="modal-add" onclick="addModalProduct()">
+                    Add To Enquiry Cart
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- =========================================================
+     ENQUIRY MODAL
+========================================================= -->
+<div class="enquiry-overlay" id="enquiryModal">
+<div class="enquiry-box">
+<button class="enquiry-close" onclick="closeEnquiry()">
+            ×
+        </button>
+<h2>
+            Product Enquiry
+        </h2>
+<p>
+            Enter Your Details And Requirement.
+            Your Enquiry Will Open In WhatsApp.
+        </p>
+<div class="form-grid">
+<div class="form-group">
+<label>
+                    Full Name *
+                </label>
+<input id="customerName" placeholder="Your Name" type="text"/>
+</div>
+<div class="form-group">
+<label>
+                    Mobile Number *
+                </label>
+<input id="customerPhone" placeholder="Your Mobile Number" type="tel"/>
+</div>
+<div class="form-group">
+<label>
+                    Email
+                </label>
+<input id="customerEmail" placeholder="Your Email" type="email"/>
+</div>
+<div class="form-group">
+<label>
+                    Location
+                </label>
+<input id="customerLocation" placeholder="City / District" type="text"/>
+</div>
+<div class="form-group full">
+<label>
+                    Selected Products
+                </label>
+<textarea id="selectedProducts" placeholder="Products You Are Interested In"></textarea>
+</div>
+<div class="form-group full">
+<label>
+                    Additional Requirement
+                </label>
+<textarea id="customerMessage" placeholder="Tell Us About Your Requirement..."></textarea>
+</div>
+</div>
+<button class="submit-enquiry" onclick="sendEnquiry()">
+            Send Enquiry On WhatsApp ↗
+        </button>
+</div>
+</div>
+<!-- =========================================================
+     CHATBOT BUTTON
+========================================================= -->
+<button aria-label="Open ZynGen Chatbot" class="zyngen-chat-button" id="zyngenChatButton" onclick="toggleZynGenChat()">
+<span class="chat-icon">
+        💬
+    </span>
+<span class="chat-close">
+        ×
+    </span>
+</button>
+<!-- =========================================================
+     CHATBOX
+========================================================= -->
+<div class="zyngen-chatbox" id="zyngenChatbox">
+<div class="zyngen-chat-header">
+<img alt="ZynGen" class="chatbot-logo" src="logo.png"/>
+<div class="chatbot-header-content">
+<strong>
+                ZynGen Assistant
+            </strong>
+<span>
+<i class="chatbot-online-dot"></i>
+
+                Online · Ready To Help
+
+            </span>
+</div>
+</div>
+<div class="zyngen-chat-messages" id="zyngenChatMessages">
+<div class="chat-message bot">
+<div class="chat-bubble">
+
+                👋 Hello! Welcome To
+                <strong>
+                    ZynGen Enterprises
+                </strong>.
+
+                <br/><br/>
+
+                I Can Help You Find Our
+                Agri, Food &amp; Natural Products.
+
+            </div>
+</div>
+<div class="chat-message bot">
+<div class="chat-bubble">
+
+                What Are You Looking For?
+
+                <div class="chat-quick-options">
+<button class="chat-quick-btn" onclick="chatQuickReply('products')">
+                        🌿 View Products
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('oil')">
+                        🥥 Natural Oils
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('honey')">
+                        🍯 Honey
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('tea')">
+                        🍵 Tea Products
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('food')">
+                        🌾 Food Products
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('enquiry')">
+                        📩 Make Enquiry
+                    </button>
+<button class="chat-quick-btn" onclick="chatQuickReply('whatsapp')">
+                        💬 WhatsApp
+                    </button>
+</div>
+</div>
+</div>
+<div class="chat-message bot chat-typing" id="chatTyping">
+<div class="typing-bubble">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div class="zyngen-chat-input-area">
+<input autocomplete="off" class="zyngen-chat-input" id="zyngenChatInput" onkeydown="
+                if(event.key==='Enter')
+                sendZynGenChat()
+            " placeholder="Ask About Our Products..." type="text"/>
+<button aria-label="Send" class="zyngen-chat-send" onclick="sendZynGenChat()">
+            ➤
+        </button>
+</div>
+</div>
+<!-- =========================================================
+     MAIN JAVASCRIPT
+========================================================= -->
+<script>
+
+/* =========================================================
+   PAGE LOADER
+========================================================= */
+
+window.addEventListener("load", function(){
+
+    const loader =
+        document.getElementById("pageLoader");
+
+    setTimeout(function(){
+
+        loader.classList.add("loader-hidden");
+
+    },900);
+
+});
+
+
+/* SAFETY FALLBACK */
+
+setTimeout(function(){
+
+    const loader =
+        document.getElementById("pageLoader");
+
+    if(loader){
+
+        loader.classList.add("loader-hidden");
+
+    }
+
+},5000);
+
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+/* FILTER */
+
+function filterProducts(category,button){
+
+    const cards =
+        document.querySelectorAll(".product-card");
+
+    const buttons =
+        document.querySelectorAll(".category-btn");
+
+
+    buttons.forEach(btn=>{
+
+        btn.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+    cards.forEach(card=>{
+
+        if(
+            category === "all" ||
+            card.dataset.category === category
+        ){
+
+            card.style.display = "block";
+
+        }
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   CART + PACKAGE SELECTION
+========================================================= */
+
+let cart = [];
+
+let selectedModalProduct = {
+    name:"",
+    image:"",
+    packageOptions:[]
+};
+
+function getPackageOptions(name, category){
+    const n = String(name || "").toLowerCase();
+    const c = String(category || "").toLowerCase();
+
+    if(n.includes("tea")) return ["100g","250g","500g","1kg","5kg","10kg","15kg"];
+    if(n.includes("brown sugar")) return ["250g","500g","1kg"];
+    if(n.includes("honey")) return ["500g","1kg"];
+    if(n.includes("coconut oil")) return ["300ml","500ml","1L"];
+    if(n.includes("castor oil") || n.includes("sesame oil")) return ["300ml","500ml","1L"];
+    if(c.includes("oil")) return ["300ml","500ml","1L"];
+    return ["Standard"];
+}
+
+/* FILTER */
+function filterProducts(category,button){
+    const cards = document.querySelectorAll(".product-card");
+    const buttons = document.querySelectorAll(".category-btn");
+
+    buttons.forEach(btn=>btn.classList.remove("active"));
+    if(button) button.classList.add("active");
+
+    cards.forEach(card=>{
+        card.style.display = category === "all" || card.dataset.category === category ? "block" : "none";
+    });
+}
+
+/* ADD TO CART - DOES NOT OPEN CART */
+function addToCart(name,image,packageSize="Standard",quantity=1){
+    quantity = Math.max(1, parseInt(quantity,10) || 1);
+
+    const existing = cart.find(item =>
+        item.name === name && item.packageSize === packageSize
+    );
+
+    if(existing){
+        existing.quantity += quantity;
+    }else{
+        cart.push({name,image,packageSize,quantity});
+    }
+
+    updateCart();
+    showCartToast(`${name} • ${packageSize} • Qty ${quantity} added to cart`);
+}
+
+function showCartToast(message){
+    let toast = document.getElementById("cartToast");
+    if(!toast){
+        toast = document.createElement("div");
+        toast.id = "cartToast";
+        toast.className = "cart-toast";
+        document.body.appendChild(toast);
+    }
+    toast.textContent = "✓ " + message;
+    toast.classList.add("show");
+    clearTimeout(window.cartToastTimer);
+    window.cartToastTimer = setTimeout(()=>toast.classList.remove("show"),1800);
+}
+
+/* UPDATE CART */
+function updateCart(){
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    if(!cartItems || !cartCount) return;
+
+    const totalQuantity = cart.reduce((sum,item)=>sum + item.quantity,0);
+    cartCount.textContent = totalQuantity;
+
+    if(cart.length === 0){
+        cartItems.innerHTML = `
+            <div class="empty-cart">
+                Your enquiry cart is empty.
+                <br><br>
+                Add products to continue.
+            </div>`;
+        return;
+    }
+
+    cartItems.innerHTML = "";
+
+    cart.forEach((item,index)=>{
+        const div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `
+            <div class="cart-item-image">
+                <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="cart-item-info">
+                <h4>${item.name}</h4>
+                <span class="cart-size">Package: ${item.packageSize}</span>
+                <div class="cart-quantity-controls">
+                    <button class="qty-btn" onclick="changeCartQuantity(${index},-1)" aria-label="Decrease quantity">−</button>
+                    <span class="qty-value">${item.quantity}</span>
+                    <button class="qty-btn" onclick="changeCartQuantity(${index},1)" aria-label="Increase quantity">+</button>
+                </div>
+            </div>
+            <button class="remove-item" onclick="removeCartItem(${index})">Remove</button>`;
+        cartItems.appendChild(div);
+    });
+
+}
+
+function changeCartQuantity(index,change){
+    if(!cart[index]) return;
+    cart[index].quantity += change;
+    if(cart[index].quantity <= 0) cart.splice(index,1);
+    updateCart();
+}
+
+function removeCartItem(index){
+    cart.splice(index,1);
+    updateCart();
+}
+
+/* CART OPENS ONLY WHEN USER CLICKS THE CART BUTTON */
+function openCart(){
+    updateCart();
+    document.getElementById("cartDrawer").classList.add("show");
+    document.getElementById("cartOverlay").classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+function closeCart(){
+    document.getElementById("cartDrawer").classList.remove("show");
+    document.getElementById("cartOverlay").classList.remove("show");
+    document.body.style.overflow = "";
+}
+
+/* PRODUCT MODAL */
+function showProduct(name,category,image,description){
+    const packageOptions = getPackageOptions(name,category);
+
+    selectedModalProduct = {name,image,packageOptions};
+
+    document.getElementById("modalTitle").textContent = name;
+    document.getElementById("modalCategory").textContent = category.toUpperCase();
+    document.getElementById("modalDescription").textContent = description;
+    document.getElementById("modalImage").innerHTML = `<img src="${image}" alt="${name}">`;
+
+    const select = document.getElementById("modalPackageSize");
+    select.innerHTML = packageOptions.map(size=>`<option value="${size}">${size}</option>`).join("");
+
+    document.getElementById("productModal").classList.add("show");
+}
+
+function closeProduct(event){
+    if(event && event.target !== document.getElementById("productModal")) return;
+    document.getElementById("productModal").classList.remove("show");
+}
+
+function addModalProduct(){
+    const select = document.getElementById("modalPackageSize");
+    const packageSize = select ? select.value : "Standard";
+    addToCart(selectedModalProduct.name,selectedModalProduct.image,packageSize);
+    closeProduct();
+}
+
+/* Show PACK SIZE + QTY directly on every product card. */
+function setupProductAddButtons(){
+    document.querySelectorAll(".product-card").forEach(card=>{
+        const addButton = card.querySelector(".add-btn");
+        const image = card.querySelector("img");
+        const title = card.querySelector("h3");
+        const category = card.querySelector(".product-category");
+        const actions = card.querySelector(".product-actions");
+        if(!addButton || !image || !title || !actions) return;
+
+        const name = title.textContent.trim();
+        const imgSrc = image.getAttribute("src") || "";
+        const cat = category ? category.textContent.trim() : "Natural Products";
+        const options = getPackageOptions(name,cat);
+
+        let description = "Quality-focused product selected by ZynGen Enterprises.";
+        const p = card.querySelector(".product-info p");
+        if(p) description = p.innerText.split("\n")[0].trim();
+
+        let selector = card.querySelector(".card-selection");
+        if(!selector){
+            selector = document.createElement("div");
+            selector.className = "card-selection";
+            actions.parentNode.insertBefore(selector,actions);
+        }
+
+        selector.innerHTML = `
+            <div class="card-select-box">
+                <label>Pack Size</label>
+                <select class="card-package-select" aria-label="Select pack size">
+                    ${options.map(size=>`<option value="${size}">${size}</option>`).join("")}
+                </select>
+            </div>
+            <div class="card-select-box">
+                <label>Qty</label>
+                <input class="card-qty-input" type="number" min="1" max="99" value="1" aria-label="Select quantity">
+            </div>`;
+
+        const sizeSelect = selector.querySelector(".card-package-select");
+        const qtyInput = selector.querySelector(".card-qty-input");
+
+        addButton.onclick = function(){
+            addToCart(name,imgSrc,sizeSelect.value,qtyInput.value);
+            qtyInput.value = 1;
+        };
+    });
+}
+
+/* =========================================================
+   ENQUIRY
+========================================================= */
+
+function openEnquiry(){
+
+    closeCart();
+
+
+    let productsText = "";
+
+
+    if(cart.length > 0){
+
+        productsText =
+
+            cart.map(item =>
+
+                item.name +
+
+                " - Package: " +
+
+                item.packageSize +
+
+                " - Qty: " +
+
+                item.quantity
+
+            ).join("\n");
+
+    }
+
+
+    document
+        .getElementById(
+            "selectedProducts"
+        )
+        .value = productsText;
+
+
+    document
+        .getElementById(
+            "enquiryModal"
+        )
+        .classList.add("show");
+
+}
+
+
+function closeEnquiry(){
+
+    document
+        .getElementById(
+            "enquiryModal"
+        )
+        .classList.remove("show");
+
+}
+
+
+/* SEND ENQUIRY */
+
+function sendEnquiry(){
+
+    const name =
+        document
+        .getElementById(
+            "customerName"
+        )
+        .value.trim();
+
+
+    const phone =
+        document
+        .getElementById(
+            "customerPhone"
+        )
+        .value.trim();
+
+
+    const email =
+        document
+        .getElementById(
+            "customerEmail"
+        )
+        .value.trim();
+
+
+    const location =
+        document
+        .getElementById(
+            "customerLocation"
+        )
+        .value.trim();
+
+
+    const products =
+        document
+        .getElementById(
+            "selectedProducts"
+        )
+        .value.trim();
+
+
+    const message =
+        document
+        .getElementById(
+            "customerMessage"
+        )
+        .value.trim();
+
+
+    if(!name){
+
+        alert(
+            "Please enter your name."
+        );
+
+        return;
+
+    }
+
+
+    if(!phone){
+
+        alert(
+            "Please enter your mobile number."
+        );
+
+        return;
+
+    }
+
+
+    const whatsappMessage =
+
+`Hello ZynGen Enterprises,
+
+I would like to make an enquiry for Agri & Natural Products.
+
+Customer Details
+-------------------------
+Name: ${name}
+Mobile: ${phone}
+Email: ${email || "Not provided"}
+Location: ${location || "Not provided"}
+
+Products Required
+-------------------------
+${products || "Product enquiry"}
+
+Additional Requirement
+-------------------------
+${message || "No additional requirement"}
+
+Please share the product availability and further details.
+
+Thank you.`;
+
+
+    const whatsappURL =
+
+        "https://wa.me/919363404447?text=" +
+
+        encodeURIComponent(
+            whatsappMessage
+        );
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================================================
+   CHATBOT
+========================================================= */
+
+function toggleZynGenChat(){
+
+    document
+        .getElementById(
+            'zyngenChatbox'
+        )
+        .classList.toggle('active');
+
+
+    document
+        .getElementById(
+            'zyngenChatButton'
+        )
+        .classList.toggle('active');
+
+}
+
+
+function scrollChatToBottom(){
+
+    const m =
+        document.getElementById(
+            'zyngenChatMessages'
+        );
+
+    m.scrollTop =
+        m.scrollHeight;
+
+}
+
+
+function showChatTyping(){
+
+    document
+        .getElementById(
+            'chatTyping'
+        )
+        .classList.add('show');
+
+    scrollChatToBottom();
+
+}
+
+
+function hideChatTyping(){
+
+    document
+        .getElementById(
+            'chatTyping'
+        )
+        .classList.remove('show');
+
+}
+
+
+function escapeChatHTML(t){
+
+    return t
+
+        .replace(/&/g,'&amp;')
+
+        .replace(/</g,'&lt;')
+
+        .replace(/>/g,'&gt;')
+
+        .replace(/"/g,'&quot;')
+
+        .replace(/'/g,'&#039;');
+
+}
+
+
+function addUserMessage(message){
+
+    const m =
+        document.getElementById(
+            'zyngenChatMessages'
+        );
+
+    const t =
+        document.getElementById(
+            'chatTyping'
+        );
+
+    const d =
+        document.createElement('div');
+
+
+    d.className =
+        'chat-message user';
+
+
+    d.innerHTML =
+
+        '<div class="chat-bubble">' +
+
+        escapeChatHTML(message) +
+
+        '</div>';
+
+
+    m.insertBefore(d,t);
+
+    scrollChatToBottom();
+
+}
+
+
+function addBotMessage(
+    message,
+    buttons=[]
+){
+
+    const m =
+        document.getElementById(
+            'zyngenChatMessages'
+        );
+
+    const t =
+        document.getElementById(
+            'chatTyping'
+        );
+
+    const d =
+        document.createElement('div');
+
+
+    d.className =
+        'chat-message bot';
+
+
+    let b = '';
+
+
+    if(buttons.length){
+
+        b =
+            '<div class="chat-quick-options">';
+
+
+        buttons.forEach(x=>{
+
+            b +=
+
+                '<button ' +
+
+                'class="chat-quick-btn" ' +
+
+                'onclick="' +
+
+                x.action +
+
+                '">' +
+
+                x.text +
+
+                '</button>';
+
+        });
+
+
+        b +=
+            '</div>';
+
+    }
+
+
+    d.innerHTML =
+
+        '<div class="chat-bubble">' +
+
+        message +
+
+        b +
+
+        '</div>';
+
+
+    m.insertBefore(d,t);
+
+    scrollChatToBottom();
+
+}
+
+
+/* QUICK CHAT */
+
+function chatQuickReply(type){
+
+    const labels = {
+
+        products:
+            'Show me your products',
+
+        oil:
+            'What natural oils do you have?',
+
+        honey:
+            'Do you have honey?',
+
+        tea:
+            'What tea products do you have?',
+
+        food:
+            'What food products do you have?',
+
+        enquiry:
+            'I want to make an enquiry',
+
+        whatsapp:
+            'I want to talk on WhatsApp'
+
+    };
+
+
+    addUserMessage(
+        labels[type] || type
+    );
+
+
+    processZynGenChat(type);
+
+}
+
+
+/* PROCESS CHAT */
+
+function processZynGenChat(type){
+
+    showChatTyping();
+
+
+    setTimeout(function(){
+
+        hideChatTyping();
+
+
+        switch(type){
+
+            case 'products':
+
+                addBotMessage(
+
+                    '🌿 <strong>Our Products</strong><br><br>' +
+
+                    'ZynGen currently offers:<br>' +
+
+                    '🥥 Natural Oils<br>' +
+
+                    '🍯 Honey Products<br>' +
+
+                    '🌾 Food Products<br>' +
+
+                    '🍵 Tea Products<br><br>' +
+
+                    'You can explore the complete product range below.',
+
+                    [
+
+                        {
+                            text:'🌿 View Products',
+
+                            action:
+                                'goToProducts()'
+                        },
+
+                        {
+                            text:'📩 Make Enquiry',
+
+                            action:
+                                "chatQuickReply('enquiry')"
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'oil':
+
+                addBotMessage(
+
+                    '🥥 <strong>Natural Oils</strong><br><br>' +
+
+                    'Our current natural oil range includes:<br>' +
+
+                    '• Coconut Oil<br>' +
+
+                    '• Groundnut Oil<br>' +
+
+                    '• Castor Oil<br>' +
+
+                    '• Sesame Oil<br><br>' +
+
+                    'Different pack sizes are available depending on the product.',
+
+                    [
+
+                        {
+                            text:'View Oil Products',
+
+                            action:
+                                "goToCategory('oil')"
+                        },
+
+                        {
+                            text:'Make Enquiry',
+
+                            action:
+                                "chatQuickReply('enquiry')"
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'honey':
+
+                addBotMessage(
+
+                    '🍯 <strong>Honey Products</strong><br><br>' +
+
+                    'ZynGen offers selected honey products with a focus on quality and natural sourcing.<br><br>' +
+
+                    'Would you like to enquire about availability?',
+
+                    [
+
+                        {
+                            text:'🍯 View Honey',
+
+                            action:
+                                "goToCategory('honey')"
+                        },
+
+                        {
+                            text:'📩 Enquire Now',
+
+                            action:
+                                "chatQuickReply('enquiry')"
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'tea':
+
+                addBotMessage(
+
+                    '🍵 <strong>Tea Products</strong><br><br>' +
+
+                    'Our tea range includes:<br>' +
+
+                    '• Masala Tea<br>' +
+
+                    '• Cardamom Tea<br>' +
+
+                    '• Chocolate Tea<br>' +
+
+                    '• Kashmiri Tea<br>' +
+
+                    '• Rose Tea<br>' +
+
+                    '• Hibiscus Tea<br>' +
+
+                    '• Blue Tea<br><br>' +
+
+                    'Wholesale and multiple pack sizes are available for selected products.',
+
+                    [
+
+                        {
+                            text:'🍵 View Tea',
+
+                            action:
+                                "goToCategory('tea')"
+                        },
+
+                        {
+                            text:'📩 Make Enquiry',
+
+                            action:
+                                "chatQuickReply('enquiry')"
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'food':
+
+                addBotMessage(
+
+                    '🌾 <strong>Food Products</strong><br><br>' +
+
+                    'ZynGen provides selected food and natural products focused on quality and everyday use.<br><br>' +
+
+                    'Please explore the Food Products section for the current range.',
+
+                    [
+
+                        {
+                            text:'🌾 View Food',
+
+                            action:
+                                "goToCategory('food')"
+                        },
+
+                        {
+                            text:'📩 Make Enquiry',
+
+                            action:
+                                "chatQuickReply('enquiry')"
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'enquiry':
+
+                addBotMessage(
+
+                    '📩 <strong>Product Enquiry</strong><br><br>' +
+
+                    'You can send us your requirement directly.<br><br>' +
+
+                    'Select your products and provide your details. Our team will get back to you with availability and further information.',
+
+                    [
+
+                        {
+                            text:'📩 Open Enquiry',
+
+                            action:
+                                'openChatEnquiry()'
+                        },
+
+                        {
+                            text:'💬 WhatsApp',
+
+                            action:
+                                'openZynGenWhatsApp()'
+                        }
+
+                    ]
+
+                );
+
+                break;
+
+
+            case 'whatsapp':
+
+                openZynGenWhatsApp();
+
+                break;
+
+        }
+
+    },550);
+
+}
+
+
+/* =========================================================
+   NORMAL CHAT
+========================================================= */
+
+function sendZynGenChat(){
+
+    const i =
+        document.getElementById(
+            'zyngenChatInput'
+        );
+
+    const msg =
+        i.value.trim();
+
+
+    if(!msg){
+
+        return;
+
+    }
+
+
+    addUserMessage(msg);
+
+    i.value = "";
+
+    processNaturalChat(msg);
+
+}
+
+
+/* =========================================================
+   NATURAL LANGUAGE CHAT
+========================================================= */
+
+function processNaturalChat(message){
+
+    const text =
+        message.toLowerCase();
+
+
+    showChatTyping();
+
+
+    setTimeout(function(){
+
+        hideChatTyping();
+
+
+        if(
+            /\b(product|products|catalog|catalogue|available)\b/
+            .test(text)
+        ){
+
+            addBotMessage(
+
+                '🌿 We offer Natural Oils, Honey, Food Products and Tea Products.<br><br>' +
+
+                'Would you like to explore the products?',
+
+                [
+
+                    {
+                        text:'View Products',
+
+                        action:
+                            'goToProducts()'
+                    },
+
+                    {
+                        text:'Make Enquiry',
+
+                        action:
+                            "chatQuickReply('enquiry')"
+                    }
+
+                ]
+
+            );
+
+            return;
+
+        }
+
+
+        if(
+            /oil|coconut|groundnut|sesame|castor/
+            .test(text)
+        ){
+
+            chatQuickReply('oil');
+
+            return;
+
+        }
+
+
+        if(/honey/.test(text)){
+
+            chatQuickReply('honey');
+
+            return;
+
+        }
+
+
+        if(/tea/.test(text)){
+
+            chatQuickReply('tea');
+
+            return;
+
+        }
+
+
+        if(
+            /food|sugar|brown sugar/
+            .test(text)
+        ){
+
+            chatQuickReply('food');
+
+            return;
+
+        }
+
+
+        if(
+            /price|cost|rate|mrp|discount|offer/
+            .test(text)
+        ){
+
+            addBotMessage(
+
+                'Thank you for your interest.<br><br>' +
+                'Please select a product and package size, then send us an enquiry for availability, quotation and bulk orders.',
+
+                [
+                    {
+                        text:'📩 Make Enquiry',
+                        action:'openChatEnquiry()'
+                    },
+                    {
+                        text:'💬 WhatsApp',
+                        action:'openZynGenWhatsApp()'
+                    }
+                ]
+            );
+
+            return;
+
+        }
+
+
+        if(
+            /enquiry|inquiry|buy|order|purchase/
+            .test(text)
+        ){
+
+            chatQuickReply('enquiry');
+
+            return;
+
+        }
+
+
+        if(
+            /whatsapp|contact|talk|call/
+            .test(text)
+        ){
+
+            addBotMessage(
+
+                '💬 You can contact the ZynGen team directly through WhatsApp.',
+
+                [
+
+                    {
+                        text:'Open WhatsApp',
+
+                        action:
+                            'openZynGenWhatsApp()'
+                    }
+
+                ]
+
+            );
+
+            return;
+
+        }
+
+
+        if(
+            /hello|hi|hey/
+            .test(text)
+        ){
+
+            addBotMessage(
+
+                '👋 Hello!<br><br>' +
+
+                'Welcome to <strong>ZynGen Enterprises</strong>.<br><br>' +
+
+                'How can I help you today?',
+
+                [
+
+                    {
+                        text:'🌿 View Products',
+
+                        action:
+                            "chatQuickReply('products')"
+                    },
+
+                    {
+                        text:'📩 Make Enquiry',
+
+                        action:
+                            "chatQuickReply('enquiry')"
+                    }
+
+                ]
+
+            );
+
+            return;
+
+        }
+
+
+        addBotMessage(
+
+            "I'm here to help you with ZynGen's Agri, Food &amp; Natural Products.<br><br>" +
+
+            'You can ask me about:<br>' +
+
+            '🌿 Products<br>' +
+
+            '🥥 Natural Oils<br>' +
+
+            '🍯 Honey<br>' +
+
+            '🍵 Tea<br>' +
+
+            '🌾 Food Products<br>' +
+
+            '📩 Enquiries',
+
+            [
+
+                {
+                    text:'View Products',
+
+                    action:
+                        'goToProducts()'
+                },
+
+                {
+                    text:'Make Enquiry',
+
+                    action:
+                        "chatQuickReply('enquiry')"
+                }
+
+            ]
+
+        );
+
+
+    },550);
+
+}
+
+
+/* =========================================================
+   GO TO PRODUCTS
+========================================================= */
+
+function goToProducts(){
+
+    const s =
+        document.getElementById(
+            'products'
+        );
+
+
+    if(s){
+
+        s.scrollIntoView({
+
+            behavior:'smooth',
+
+            block:'start'
+
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   GO TO CATEGORY
+========================================================= */
+
+function goToCategory(category){
+
+    goToProducts();
+
+
+    setTimeout(function(){
+
+        const btn =
+            document.querySelector(
+                '.category-btn[onclick*="' +
+                category +
+                '"]'
+            );
+
+
+        if(btn){
+
+            btn.click();
+
+        }
+
+    },500);
+
+}
+
+
+/* =========================================================
+   CHAT ENQUIRY
+========================================================= */
+
+function openChatEnquiry(){
+
+    if(
+        typeof openEnquiry ===
+        'function'
+    ){
+
+        openEnquiry();
+
+    }
+    else{
+
+        openZynGenWhatsApp();
+
+    }
+
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+function openZynGenWhatsApp(){
+
+    const message =
+
+`Hello ZynGen Enterprises,
+
+I would like to know more about your Agri & Natural Products.
+
+Please share the available products, pack sizes and details.
+
+Thank you.`;
+
+
+    window.open(
+
+        'https://wa.me/919363404447?text=' +
+
+        encodeURIComponent(message),
+
+        '_blank'
+
+    );
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded",function(){
+    setupProductAddButtons();
+    updateCart();
+});
+
+</script>
+</body>
+</html>
